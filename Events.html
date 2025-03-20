@@ -1,0 +1,83 @@
+<!--Demonstrate following events using JavaScript---->
+<!--    a. onclick 
+        b. ondblclick 
+        c. onsubmit 
+        d. onreset 
+        e. onload 
+        f. onselect 
+        g. onchange --->
+   <!-- SHUBHAM PATIL --->
+   
+    <html>
+
+    <head>
+<script>
+        function f1()
+        {
+            document.write("onclick event");
+        }
+
+        function f2()
+        {
+            document.write("ondblclick event");
+        }
+
+        function f3()
+        {
+            window.confirm("Thank you for filling details");
+        }
+
+        function f4()
+        {
+            alert("Form reset");
+        }
+
+        function f5()
+        {
+            window.confirm("Are you sure about reloading form?");
+        }
+
+        function f6()
+        {
+            document.getElementById("sel").innerHTML = "You selected some text";
+        }
+
+        function f7()
+        {
+            alert("college name changed");
+        }
+
+        </script>
+    </head>
+
+    <body onload="f5()">
+        
+        <button onclick="f1()">Click Here</button>
+        <button ondblclick="f2()">Double Click Here</button>
+        
+        <form  onsubmit="f3()" onreset="f4()">
+            <label><br>Enter First Name<br></label>
+            <input type="text">
+            <label><br>Enter Middle Name<br></label>
+            <input type="text">
+            <label><br>Enter Last Name<br></label>
+            <input type="text">
+            <label><br><br>Enter you college<br></label>
+            <input type="text" onchange="f7()" value="AITD">
+
+            <input type="submit">
+            <input type="reset">
+
+            <br><br>
+            <input type=text value=Remark text onselect="f6()">
+            <p id="sel"></p>
+
+            <br><br>
+
+
+
+
+        </form>
+    </body>
+
+    </html>

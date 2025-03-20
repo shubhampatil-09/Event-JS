@@ -1,0 +1,43 @@
+<!--WAJS Percentage and Grade---->
+   <!-- SHUBHAM PATIL --->
+   
+   <html>
+<head>
+ <script>
+
+
+    function f1() {
+            var mks = [];
+            var sum = 0;
+            var percentage;
+
+            for (var i = 0; i < 5; i++) {
+                mks[i] = parseInt(prompt("Enter marks for Subject " + (i + 1) + " :"));
+                sum = sum + mks[i];
+            }
+
+            for (var i = 0; i < 5; i++) {
+                document.write("<br>Marks of Subject " + (i + 1) + " is " + mks[i]);
+            }
+
+            percentage = (sum / 500) * 100;
+            document.write("<br>Your percentage is " + percentage + " and grade is ");
+
+            if (percentage >= 75 && percentage <= 100)
+                document.write("Distinction");
+            else if (percentage >= 60 && percentage <= 74)
+                document.write("First Class");
+            else if (percentage >= 45 && percentage <= 59)
+                document.write("Second Class");
+            else if (percentage >= 33 && percentage <= 44)
+                document.write("Pass Class");
+            else
+                document.write("Fail");
+        }
+    </script>
+</head>
+<body>
+    <p>ENTER MARKS OF SUBJECTS</p>
+    <button onclick="f1()">Click Here</button>
+</body>
+</html>

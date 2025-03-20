@@ -1,0 +1,65 @@
+  <!--WAJS to accept salary and name from five employees---->
+   <!-- SHUBHAM PATIL ---> 
+   
+   
+   
+   <html>
+
+    <head>
+            
+        
+        <script>
+        function f1()
+        {
+            var name = [];
+            var salary = [];
+            var MaxIndex=0, MinIndex=0;
+
+            for(var i=0 ; i<5; i++)
+            {
+                name[i]=prompt("Enter Name of Employee " +(i+1));
+                salary[i]=parseInt(prompt("Enter Salary of Employee " +(i+1)));
+            }
+
+            var max = salary[0];
+            var min = salary[0];
+            
+            for(var i=1;i<5;i++)
+            {
+                if(max < salary[i])
+                {
+                    max=salary[i];
+                    MaxIndex=i;
+                }
+                    
+
+                if(min > salary[i])
+                {
+                    min=salary[i];
+                    MinIndex=i;
+                }
+
+
+            }
+            
+            for(var i=0;i<5;i++)
+            {
+                document.write("<br>Employee "+(i+1) + " Name : "+name[i]+" Salary : "+salary[i]);
+            }
+            
+           
+            document.write("<br><br>Details of Employee with Highest salary  : ");
+            document.write("Name :" + name[MaxIndex] + " Salary : " + salary[MaxIndex]);
+
+            document.write("<br><br>Details of Employee with Lowest salary  :");
+            document.write("Name :" + name[MinIndex] + " Salary : " + salary[MinIndex]);
+        }
+
+        </script>
+    </head>
+
+    <body>
+        <button onclick="f1()">Click Here</button>
+    </body>
+
+    </html>

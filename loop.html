@@ -1,0 +1,37 @@
+<!--WAJS for-in-loop and for-of-loop ---->
+ <!-- SHUBHAM PATIL --> 
+    <html>
+
+    <head>
+        
+        <script>
+        function f1()
+        {
+          var person = {name : "Shubham" , lname: "Patil", age : 20  };
+          var i;
+          for(i in person)
+          {
+            document.write("<br>"+ person[i]);
+          }
+
+        }
+
+        function f2()
+        {
+            var fruits = ["Mango", "Apple" ,"Banana"];
+            var i;
+            for(i of fruits)
+            {
+                document.write("<br>"+ i);
+            }
+        }
+        
+        </script>
+    </head>
+
+    <body>
+        <button onclick="f1()">Click Here for in loop</button>
+        <button onclick="f2()">Click Here for of loop</button>
+    </body>
+
+    </html>

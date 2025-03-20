@@ -1,0 +1,40 @@
+<!--TO FIND THE SUM AND AVERAGE OF ELEMENTS -->
+<!--SHUBHAM PATIL-22CO61 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+ <script>
+     var a=[];
+	 var sum=0;
+	 var i=0;
+	 var  avg=0;
+	 var  n=0;
+	 n=parseInt(prompt("enter number of elements"));
+	 
+	 
+	   for(i=0;i<n;i++)
+	     {
+		   a[i]=parseInt(prompt("enter next element"));
+		 }
+		  document.write("<br>the number of elements=",+n);
+		   document.write("<br>elements are:");
+	    for(i=0;i<n;i++)
+	     {
+		   document.write("<br> "+a[i]);
+		 }
+         for(i=0;i<n;i++)
+	     {
+		   sum=sum+a[i];
+		 }
+		 avg=sum/n;
+		
+		document.write("<br>sum=",+sum);
+		document.write("<br>average=",+avg);
+		
+ </script>
+ </head>
+ <body>
+ </body>
+ </html>
+ 

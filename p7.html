@@ -1,0 +1,33 @@
+<!--pattern-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>phone pattern JS</title>
+	
+<script>
+function validate(){
+var phone = document.getElementById("phone").value;
+var x = /^[678]{1}[0-9]{9}$/;
+
+if(x.test(phone)==false)
+{
+alert("invalid");
+}
+else
+{
+alert("Valid");
+}
+}
+
+	</script>
+
+</head>
+<body>
+	<form>
+	<input type = "text" id ="phone">
+     <button type ="button" onclick ="validate()"> send data </button>
+
+		</form>
+</body>
+</html>

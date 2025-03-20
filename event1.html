@@ -1,0 +1,73 @@
+<!--Demonstrate following events using JavaScript---->
+<!--  a. onmousedown 
+      b. onmouseup 
+      c. onmouseover 
+      d. onmouseout 
+      e. onmousemove -->
+ <!-- SHUBHAM PATIL ---> 
+
+  <html>
+
+    <head>
+	<style>
+        #c{
+            width : 250px;
+            height : 250px;
+            background-color : blue;
+            border-radius : 50%;
+            border: 3px solid black;
+            margin: 20px;
+            text-align: center;
+            font-size: 40px;
+            color : green;
+
+
+        }
+
+        </style>
+       
+        
+        <script>
+        function f1()
+        {
+            document.getElementById('a').innerText = 'Mouse button is pressed down!';
+        }
+
+        function f2()
+        {
+            document.getElementById('b').innerText = 'Mouse button is pressed up!';
+        }
+
+        function f3() 
+        {
+            document.getElementById('d').innerText = 'Mouse is over the circle!';
+        }
+
+        function f4() 
+        {
+            document.getElementById('d').innerText = 'Mouse has left the circle!'
+        }
+
+        function f5()
+        {
+            document.getElementById('d').innerText = 'Mouse is moving inside the circle!';
+        }
+
+        </script>
+    </head>
+
+    <body>
+        <form>
+             <input type=button  onmousedown="f1()" onmouseup="f2()" value="Click Here">
+             <p id="a"></p>
+            <p id="b"></p>
+        </form>
+        <div id="c" onmouseover="f3()" onmouseout="f4()" onmousemove="f5()">  
+            <p><b>Computer Engineering</b></p>
+        </div>
+        <p id="d"></p>
+       
+       
+    </body>
+
+    </html>

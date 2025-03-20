@@ -1,0 +1,42 @@
+<!--WAJS to implement simple calculator---->
+   <!-- SHUBHAM PATIL ---> 
+    <html>
+
+    <head>
+            
+        <script>
+        function f1()
+        {
+           var choice=parseInt(prompt("Choose Your Choice : 1.Addition   2.Substraction  3.Multiplication   4.Division"));
+           var a = parseInt(prompt("Enter 1st number :"));
+           var b = parseInt(prompt("Enter 2nd number :"));
+
+           switch(choice)
+           {
+                case 1 :
+                    document.write("Addition of " +a+ " + " +b+ " is " +(a+b));
+                    break;
+                case 2 :
+                    document.write("Substraction of " +a+ " - " +b+ " is " +(a-b));
+                    break;
+                case 3 :
+                    document.write("Multication of " +a+ " x " +b+ " is " +(a*b));
+                    break;
+                case 4 :
+                    document.write("Division of " +a+ " ÷ " +b+ " is " +(a/b));
+                    break;
+                default :
+                    document.write("Invalid input");
+           }
+            
+        }
+
+        </script>
+    </head>
+
+    <body>
+        <p>To use Calculator</p>
+        <button onclick="f1()">Click Here</button>
+    </body>
+
+    </html>
